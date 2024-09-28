@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto Moderno</title>
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+
+<body>
+
+    <section class="reservation" id="contacto">
+        <div class="container">
+            <div class="form-wrapper">
+                <!-- Formulario de contacto -->
+                <form action="contact-form" class="form-left" id="contact-form">
+                    <h2 class="form-title">Precalifícate</h2>
+                    <p class="form-description">
+                        Comparte tus datos para recibir seguimiento
+                    </p>
+
+                    <div class="input-group">
+                        <select name="business-type" class="input-field">
+                            <option value="" disabled selected>Tipo de Persona</option>
+                            <option value="persona-moral">Persona Moral</option>
+                            <option value="persona-fisica">Persona Física</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" name="nombre" placeholder="Nombre(s)" autocomplete="off" class="input-field">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" name="apellido-paterno" placeholder="Apellido Paterno" autocomplete="off"
+                            class="input-field">
+                        <input type="text" name="apellido-materno" placeholder="Apellido Materno" autocomplete="off"
+                            class="input-field">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" name="phone" placeholder="Teléfono" autocomplete="off" class="input-field">
+                        <input type="email" name="email" placeholder="Email" autocomplete="off" class="input-field">
+                    </div>
+
+                    <div class="input-group">
+                        <select name="help" id="serviceType" class="input-field">
+                            <option value="" disabled selected>Tipo de Servicio</option>
+                            <option value="pago-a-proveedores">Pago a Proveedores</option>
+                            <option value="credito">Crédito</option>
+                            <option value="arrendamiento">Arrendamiento</option>
+                            <option value="factoraje">Factoraje</option>
+                            <option value="seguros">Seguros</option>
+                            <option value="fianzas">Fianzas</option>
+                        </select>
+
+
+                    </div>
+
+                    <textarea name="message" placeholder="Mensaje" class="input-field"></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Enviar Solicitud
+                    </button>
+                </form>
+
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <h2 class="contact-title">Contáctanos</h2>
+                    <p class="contact-text">Solicita más información o consulta nuestros servicios:</p>
+
+                    <div class="contact-details">
+                        <p class="contact-item"><strong>Teléfono:</strong> <br> <a href="tel:+526621873008"
+                                class="contact-link">+52-662-187-3008</a></p>
+                        <br>
+                        <p class="contact-item"><strong>Ubicación:</strong> <br>Bulevar Luis Donaldo Colosio, Plaza
+                            Andenes Piso 5 #503, Col. Santa Fé</p>
+                        <br>
+                        <p class="contact-item"><strong>Horario:</strong> <br> Lunes a Viernes 09:00 am - 02:00 pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/form.js"></script>
+</body>
+
+</html>
